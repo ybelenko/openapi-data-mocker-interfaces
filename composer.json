@@ -1,0 +1,31 @@
+{
+    "name": "ybelenko/openapi-data-mocker-interfaces",
+    "description": "Package with OpenApiDataMocker interfaces.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["openapi", "swagger", "data", "mocker", "faker", "mock", "fake"],
+    "authors": [
+        {
+            "name": "Yuriy Belenko",
+            "email": "yura-bely@mail.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenAPIServer\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "@phpcs"
+        ],
+        "phpcs": "phpcs"
+    }
+}
