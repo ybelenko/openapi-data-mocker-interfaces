@@ -240,31 +240,4 @@ interface OpenApiDataMockerInterface
      * @return mixed
      */
     public function mockFromSchema($schema);
-
-    /**
-     * Mock data by referenced schema.
-     *
-     * @param string|null $ref Ref to model, eg. #/components/schemas/User
-     *
-     * @throws \InvalidArgumentException when invalid arguments passed
-     *
-     * @return OpenApiModelInterface
-     */
-    public function mockFromRef($ref);
-
-    /**
-     * Sets models namespace for handling $ref links.
-     *
-     * @param string|null $namespace Namespace of model classes eg. JohnDoesPackage\\Model\\
-     *
-     * @throws \InvalidArgumentException when namespace not a string or null
-     */
-    public function setModelsNamespace($namespace = null);
-
-    /**
-     * Gets models namespace.
-     *
-     * @return string|null
-     */
-    public function getModelsNamespace();
 }
