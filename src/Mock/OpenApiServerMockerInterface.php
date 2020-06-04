@@ -10,6 +10,8 @@
  * @license MIT
  */
 
+declare(strict_types=1);
+
 namespace OpenAPIServer\Mock;
 
 use Psr\Http\Message\ServerRequestInterface;
@@ -29,7 +31,7 @@ interface OpenApiServerMockerInterface extends OpenApiDataMockerInterface
      *
      * @return ServerRequestInterface
      */
-    public function mockRequest($requestSchema);
+    public function mockRequest($requestSchema): ServerRequestInterface;
 
     /**
      * Mocks PSR-7 server response.
@@ -38,5 +40,5 @@ interface OpenApiServerMockerInterface extends OpenApiDataMockerInterface
      *
      * @return ResponseInterface
      */
-    public function mockResponse($responseSchema);
+    public function mockResponse($responseSchema): ResponseInterface;
 }
