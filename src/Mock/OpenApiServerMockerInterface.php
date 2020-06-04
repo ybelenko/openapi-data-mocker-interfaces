@@ -1,13 +1,12 @@
 <?php
 
 /**
- * OpenApiServerMockerInterface.
- *
+ * Openapi Data Mocker Interfaces
  * PHP version 7.1
  *
  * @package OpenAPIServer\Mock
- * @author  Yuriy Belenko <yura-bely@mail.ru>
  * @link    https://github.com/ybelenko/openapi-data-mocker-interfaces
+ * @author  Yuriy Belenko <yura-bely@mail.ru>
  * @license MIT
  */
 
@@ -19,7 +18,7 @@ use OpenAPIServer\Mock\OpenApiDataMockerInterface;
 
 /**
  * OpenApiServerMockerInterface.
- * Usefull for mock server implementation and for unit testing.
+ * Useful for mock server implementation and for unit testing.
  */
 interface OpenApiServerMockerInterface extends OpenApiDataMockerInterface
 {

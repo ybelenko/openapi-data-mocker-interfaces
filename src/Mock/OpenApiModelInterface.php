@@ -1,13 +1,12 @@
 <?php
 
 /**
- * OpenApiModelInterface.
- *
+ * Openapi Data Mocker Interfaces
  * PHP version 7.1
  *
  * @package OpenAPIServer\Mock
- * @author  Yuriy Belenko <yura-bely@mail.ru>
  * @link    https://github.com/ybelenko/openapi-data-mocker-interfaces
+ * @author  Yuriy Belenko <yura-bely@mail.ru>
  * @license MIT
  */
 
