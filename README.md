@@ -2,7 +2,7 @@
 This repository holds interfaces to generate fake data from OpenAPI Specification(OAS3). Note that this is not an implementation.
 
 ## Requirements
-PHP 7.1 or newer. It could work with older versions, but it's not worth to support _EOL(end of life)_ PHP.
+PHP 7.2 or newer. It could work with older versions, but it's not worth to support _EOL(end of life)_ PHP.
 
 ## Interfaces
 |                                           Class Name                                         | Description |
