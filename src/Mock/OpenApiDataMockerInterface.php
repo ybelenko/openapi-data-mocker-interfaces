@@ -180,17 +180,17 @@ interface OpenApiDataMockerInterface
      * Shortcut to mock array type
      * Equivalent to mockData(DATA_TYPE_ARRAY);
      *
-     * @param object|array $items       Object or assoc array of described items.
-     * @param int|null     $minItems    An array instance is valid against "minItems" if its size is greater than, or equal to, the value of this keyword.
-     * @param int|null     $maxItems    An array instance is valid against "maxItems" if its size is less than, or equal to, the value of this keyword.
-     * @param bool|null    $uniqueItems If it has boolean value true, the instance validates successfully if all of its elements are unique.
+     * @param array     $items       Assoc array of described items.
+     * @param int|null  $minItems    An array instance is valid against "minItems" if its size is greater than, or equal to, the value of this keyword.
+     * @param int|null  $maxItems    An array instance is valid against "maxItems" if its size is less than, or equal to, the value of this keyword.
+     * @param bool|null $uniqueItems If it has boolean value true, the instance validates successfully if all of its elements are unique.
      *
      * @throws \InvalidArgumentException When invalid arguments passed.
      *
      * @return array
      */
     public function mockArray(
-        $items,
+        array $items,
         ?int $minItems = 0,
         ?int $maxItems = null,
         ?bool $uniqueItems = false
@@ -200,7 +200,7 @@ interface OpenApiDataMockerInterface
      * Shortcut to mock object type.
      * Equivalent to mockData(DATA_TYPE_OBJECT);
      *
-     * @param object|array           $properties           Object or array of described properties.
+     * @param array                  $properties           Assoc array of described properties.
      * @param int|null               $minProperties        An object instance is valid against "minProperties" if its number of properties is greater than, or equal to, the value of this keyword.
      * @param int|null               $maxProperties        An object instance is valid against "maxProperties" if its number of properties is less than, or equal to, the value of this keyword.
      * @param bool|object|array|null $additionalProperties If "additionalProperties" is true, validation always succeeds.
@@ -214,7 +214,7 @@ interface OpenApiDataMockerInterface
      * @return object
      */
     public function mockObject(
-        $properties,
+        array $properties,
         ?int $minProperties = 0,
         ?int $maxProperties = null,
         $additionalProperties = null,
@@ -224,11 +224,11 @@ interface OpenApiDataMockerInterface
     /**
      * Mocks OpenApi Data from schema.
      *
-     * @param array|object $schema OpenAPI schema.
+     * @param array $schema OpenAPI schema.
      *
      * @throws \InvalidArgumentException When invalid arguments passed.
      *
      * @return mixed
      */
-    public function mockFromSchema($schema);
+    public function mockFromSchema(array $schema);
 }

@@ -25,9 +25,9 @@ interface OpenApiModelInterface extends JsonSerializable
     /**
      * Gets OAS 3.0 schema mapped to current class.
      *
-     * @return array|object
+     * @return array
      */
-    public static function getOpenApiSchema();
+    public static function getOpenApiSchema(): array;
 
     /**
      * Creates new instance from provided data.

@@ -27,18 +27,18 @@ interface OpenApiServerMockerInterface extends OpenApiDataMockerInterface
     /**
      * Mocks PSR-7 server request.
      *
-     * @param array|object $requestSchema OAS 3.0 definition of request.
+     * @param array $requestSchema OAS 3.0 definition of request.
      *
      * @return ServerRequestInterface
      */
-    public function mockRequest($requestSchema): ServerRequestInterface;
+    public function mockRequest(array $requestSchema): ServerRequestInterface;
 
     /**
      * Mocks PSR-7 server response.
      *
-     * @param array|object $responseSchema OAS 3.0 definition of response.
+     * @param array $responseSchema OAS 3.0 definition of response.
      *
      * @return ResponseInterface
      */
-    public function mockResponse($responseSchema): ResponseInterface;
+    public function mockResponse(array $responseSchema): ResponseInterface;
 }
