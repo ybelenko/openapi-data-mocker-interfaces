@@ -40,9 +40,6 @@ interface OpenApiDataMockerInterface
     /** @var string DATA_TYPE_BOOLEAN */
     public const DATA_TYPE_BOOLEAN = 'boolean';
 
-    /** @var string DATA_TYPE_FILE */
-    public const DATA_TYPE_FILE = 'file';
-
     /** @var string DATA_TYPE_ARRAY */
     public const DATA_TYPE_ARRAY = 'array';
 

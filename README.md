@@ -20,7 +20,6 @@ PHP 7.2 or newer. It could work with older versions, but it's not worth to suppo
 | `DATA_TYPE_NUMBER`      |     `number`        |                       |
 | `DATA_TYPE_STRING`      |     `string`        |                       |
 | `DATA_TYPE_BOOLEAN`     |     `boolean`       |                       |
-| `DATA_TYPE_FILE`        |                     |                       |
 | `DATA_TYPE_ARRAY`       |     `array`         |                       |
 | `DATA_TYPE_OBJECT`      |     `object`        |                       |
 | `DATA_FORMAT_INT32`     |                     |        `int32`        |
