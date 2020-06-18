@@ -14,7 +14,7 @@ declare(strict_types=1);
 
 namespace OpenAPIServer\Mock;
 
-use InvalidArgumentException;
+use OpenAPIServer\Mock\Exceptions\OpenApiDataMockerException;
 
 /**
  * OpenApiDataMockerInterface.
@@ -87,7 +87,7 @@ interface OpenApiDataMockerInterface
      * @param string     $dataFormat OpenApi data format.
      * @param array|null $options    OpenApi data options.
      *
-     * @throws \InvalidArgumentException When invalid arguments passed.
+     * @throws OpenApiDataMockerException When invalid arguments passed.
      *
      * @return mixed
      */
@@ -107,7 +107,7 @@ interface OpenApiDataMockerInterface
      * @param bool|null   $exclusiveMinimum Default is false.
      * @param bool|null   $exclusiveMaximum Default is false.
      *
-     * @throws \InvalidArgumentException When $maximum less than $minimum or invalid arguments provided.
+     * @throws OpenApiDataMockerException When $maximum less than $minimum or invalid arguments provided.
      *
      * @return int
      */
@@ -129,7 +129,7 @@ interface OpenApiDataMockerInterface
      * @param bool|null   $exclusiveMinimum Default is false.
      * @param bool|null   $exclusiveMaximum Default is false.
      *
-     * @throws \InvalidArgumentException When $maximum less than $minimum or invalid arguments provided.
+     * @throws OpenApiDataMockerException When $maximum less than $minimum or invalid arguments provided.
      *
      * @return float
      */
@@ -153,7 +153,7 @@ interface OpenApiDataMockerInterface
      * @param string|null $pattern    This string should be a valid regular expression, according to the ECMA 262 regular expression dialect.
      *                                Recall: regular expressions are not implicitly anchored.
      *
-     * @throws \InvalidArgumentException When invalid arguments passed.
+     * @throws OpenApiDataMockerException When invalid arguments passed.
      *
      * @return string
      */
@@ -182,7 +182,7 @@ interface OpenApiDataMockerInterface
      * @param int|null  $maxItems    An array instance is valid against "maxItems" if its size is less than, or equal to, the value of this keyword.
      * @param bool|null $uniqueItems If it has boolean value true, the instance validates successfully if all of its elements are unique.
      *
-     * @throws \InvalidArgumentException When invalid arguments passed.
+     * @throws OpenApiDataMockerException When invalid arguments passed.
      *
      * @return array
      */
@@ -206,7 +206,7 @@ interface OpenApiDataMockerInterface
      * @param array|null             $required             This array MUST have at least one element.  Elements of this array must be strings, and MUST be unique.
      *                                                     An object instance is valid if its property set contains all elements in this array value.
      *
-     * @throws \InvalidArgumentException When invalid arguments passed.
+     * @throws OpenApiDataMockerException When invalid arguments passed.
      *
      * @return object
      */
@@ -223,7 +223,7 @@ interface OpenApiDataMockerInterface
      *
      * @param array $schema OpenAPI schema.
      *
-     * @throws \InvalidArgumentException When invalid arguments passed.
+     * @throws OpenApiDataMockerException When invalid arguments passed.
      *
      * @return mixed
      */

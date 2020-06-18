@@ -10,6 +10,7 @@ PHP 7.2 or newer. It could work with older versions, but it's not worth to suppo
 | [OpenAPIServer\Mock\OpenApiModelInterface](src/Mock/OpenApiModelInterface.php)               | All referenced components must implement that interface. |
 | [OpenAPIServer\Mock\OpenApiDataMockerInterface](src/Mock/OpenApiDataMockerInterface.php)     | Basic data generator. Can mock scalar data types. |
 | [OpenAPIServer\Mock\OpenApiServerMockerInterface](src/Mock/OpenApiServerMockerInterface.php) | Enhanced data generator. Can mock server request and server response. |
+| [OpenAPIServer\Mock\Exceptions\OpenApiDataMockerException](src/Mock/Exceptions/OpenApiDataMockerException.php) | Implementation should throw exceptions inherited from that class. |
 
 ### `OpenAPIServer\Mock\OpenApiDataMockerInterface` Constants
 [OpenAPISpecification - Data Types](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#dataTypes)
@@ -63,6 +64,9 @@ Same methods as `OpenAPIServer\Mock\OpenApiDataMockerInterface` + following meth
 |---------------------------------|------------------------------|:-----------------------------------------:|
 | `mockRequest(array $requestSchema): ServerRequestInterface`   | Mocks PSR-7 server request.  | `Psr\Http\Message\ServerRequestInterface` |
 | `mockResponse(array $responseSchema): ResponseInterface` | Mocks PSR-7 server response. | `Psr\Http\Message\ResponseInterface`      |
+
+### `OpenAPIServer\Mock\Exceptions\OpenApiDataMockerException`
+This class makes possible to catch exceptions related to mocking feature only. It's highly encouraged not to throw builtin PHP exceptions like `Exception`, `InvalidArgumentException` etc. Use this class or extend it with your own exceptions to fit your needs.
 
 ## Related Packages
 * [Openapi Data Mocker](https://github.com/ybelenko/openapi-data-mocker) - first implementation of OAS3 fake data generator.
