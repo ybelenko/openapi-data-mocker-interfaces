@@ -62,8 +62,9 @@ Same methods as `OpenAPIServer\Mock\OpenApiDataMockerInterface` + following meth
 
 |           Method Name           |         Description          |               Return Type                 |
 |---------------------------------|------------------------------|:-----------------------------------------:|
-| `mockRequest(array $requestSchema): ServerRequestInterface`   | Mocks PSR-7 server request.  | `Psr\Http\Message\ServerRequestInterface` |
-| `mockResponse(array $responseSchema): ResponseInterface` | Mocks PSR-7 server response. | `Psr\Http\Message\ResponseInterface`      |
+| `setServer(?string $url = null, ?array $variables = null): void`   | Sets base url for mocked requests.  | `void` |
+| `mockRequest(string $path, string $method, ?array $parameters = null, ?array $requestBody = null, ?array $security = null, ?array $callbacks = null): ServerRequestInterface`   | Mocks PSR-7 server request.  | `Psr\Http\Message\ServerRequestInterface` |
+| `mockResponse(string $httpStatusCode = '200', ?array $headers = null, ?string $contentMediaType = null, ?array $contentSchema = null): ResponseInterface` | Mocks PSR-7 server response. | `Psr\Http\Message\ResponseInterface`      |
 
 ### `OpenAPIServer\Mock\Exceptions\OpenApiDataMockerException`
 This class makes possible to catch exceptions related to mocking feature only. It's highly encouraged not to throw builtin PHP exceptions like `Exception`, `InvalidArgumentException` etc. Use this class or extend it with your own exceptions to fit your needs.
