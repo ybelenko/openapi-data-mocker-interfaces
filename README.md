@@ -39,7 +39,7 @@ PHP 7.2 or newer. It could work with older versions, but it's not worth to suppo
 
 |                    Method Name                      |                    Description                  | Return Type |
 |-----------------------------------------------------|-------------------------------------------------|:-----------:|
-| `mock(string $dataType, ?string $dataFormat = null, ?array $options = [])`| Mocks OpenApi Data.                             |   `mixed`   |
+| `mockData(string $dataType, ?string $dataFormat = null, ?array $options = [])`| Mocks OpenApi Data.                             |   `mixed`   |
 | `mockInteger(?string $dataFormat = null, ?float $minimum = null, ?float $maximum = null, ?bool $exclusiveMinimum = false, ?bool $exclusiveMaximum = false): int` | Shortcut to mock integer type. Equivalent to `mockData(DATA_TYPE_INTEGER)`\*. | `int`  |
 | `mockNumber($dataFormat = null, $minimum = null, $maximum = null, $exclusiveMinimum = false, $exclusiveMaximum = false): float` | Shortcut to mock number type. Equivalent to `mockData(DATA_TYPE_NUMBER)`\*. | `float` |
 | `mockString(?string $dataFormat = null, ?int $minLength = 0, ?int $maxLength = null, ?array $enum = null, ?string $pattern = null): string` | Shortcut to mock string type. Equivalent to `mockData(DATA_TYPE_STRING)`\*. | `string` |

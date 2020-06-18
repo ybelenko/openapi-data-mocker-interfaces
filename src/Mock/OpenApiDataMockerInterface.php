@@ -91,7 +91,7 @@ interface OpenApiDataMockerInterface
      *
      * @return mixed
      */
-    public function mock(
+    public function mockData(
         string $dataType,
         ?string $dataFormat = null,
         ?array $options = []
