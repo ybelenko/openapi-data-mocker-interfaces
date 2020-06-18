@@ -219,13 +219,13 @@ interface OpenApiDataMockerInterface
     ): object;
 
     /**
-     * Mocks OpenApi Data from schema.
+     * Mocks OpenApi Schema Object. Ref @link https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#schema-object
      *
-     * @param array $schema OpenAPI schema.
+     * @param array $schema OpenAPI Schema Object.
      *
      * @throws OpenApiDataMockerException When invalid arguments passed.
      *
      * @return mixed
      */
-    public function mockFromSchema(array $schema);
+    public function mockSchemaObject(array $schema);
 }

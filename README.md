@@ -46,7 +46,7 @@ PHP 7.2 or newer. It could work with older versions, but it's not worth to suppo
 | `mockBoolean(): bool` | Shortcut to mock boolean type. Equivalent to `mockData(DATA_TYPE_BOOLEAN)`\* | `bool` |
 | `mockArray(array $items, ?int $minItems = 0, ?int $maxItems = null, ?bool $uniqueItems = false): array` | Shortcut to mock array type. `Equivalent to mockData(DATA_TYPE_ARRAY)`\*. | `array` |
 | `mockObject(array $properties, ?int $minProperties = 0, ?int $maxProperties = null, $additionalProperties = null, ?array $required = null): object` | Shortcut to mock object type. Equivalent to `mockData(DATA_TYPE_OBJECT)`\*. | `object` |
-| `mockFromSchema(array $schema)` | Mocks OpenApi Data from schema. | `mixed` |
+| `mockSchemaObject(array $schema)` | Mocks OpenApi Schema Object. | `mixed` |
 
 \* constant class is omitted, so `mockData(DATA_TYPE_INTEGER)` means `mockData(\OpenAPIServer\Mock\OpenApiDataMockerInterface\DATA_TYPE_INTEGER)`.
 
