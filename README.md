@@ -4,6 +4,8 @@ This repository holds interfaces to generate fake data from OpenAPI Specificatio
 ## Requirements
 PHP 7.3 or newer. It could work with older versions, but it's not worth to support _EOL(end of life)_ PHP.
 
+__Important notice! While PHP 8.0 declared in `composer.json` this package hasn't been tested against it.__
+
 ## Interfaces
 |                                           Class Name                                         | Description |
 |----------------------------------------------------------------------------------------------|-------------|

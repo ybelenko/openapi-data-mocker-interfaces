@@ -35,6 +35,7 @@ interface OpenApiModelInterface extends JsonSerializable
      * @param mixed $data Data with values for new instance.
      *
      * @return OpenApiModelInterface
+     * phpcs:disable Squiz.Commenting.FunctionComment.TypeHintMissing
      */
     public static function createFromData($data): OpenApiModelInterface;
 }
