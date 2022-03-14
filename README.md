@@ -1,4 +1,6 @@
 # OpenApi Data Mocker Interfaces
+[![Coding Style](https://github.com/ybelenko/openapi-data-mocker-interfaces/actions/workflows/ci.yml/badge.svg)](https://github.com/ybelenko/openapi-data-mocker-interfaces/actions/workflows/ci.yml)
+
 This repository holds interfaces to generate fake data from OpenAPI Specification(OAS3). Note that this is not an implementation.
 
 ## Requirements
